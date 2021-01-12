@@ -25,7 +25,7 @@ Class ControlURL{
     
     public static function getPage() {
 		$page = self::$_folder.DS.self::cPage().".php";
-        $error = self::$_folder.DS."index.php";
+        $error = self::$_folder.DS."error.php";
         if(is_file($page)){
             return $page;
         }else{
